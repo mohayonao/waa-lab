@@ -6,6 +6,7 @@ This repository is a collection of experimental code for Web Audio API.
 
   - [MathAddNode](MathAddNode)
   - [MathMultiplyNode](MathMultiplyNode)
+  - [MathSubtractNode](MathSubtractNode)
 
 ## License
 MIT
