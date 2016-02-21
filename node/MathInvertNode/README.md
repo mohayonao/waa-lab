@@ -6,6 +6,8 @@
 
 ### Code
 
+`x = -a`
+
 ```js
 function createMathInvertNode(context, a) {
   var b = context.createGain();
@@ -20,11 +22,11 @@ function createMathInvertNode(context, a) {
 
 ### AudioGraph
 
-![](math-invert-node.png)
+![](MathInvertNode.png)
 
 ### Plot
 
-![](math-invert-node-plot.png)
+![](MathInvertNodePlot.png)
 
 ### Demo
 
