@@ -6,33 +6,23 @@
 
 ### Code
 
-`x = a * ws1(a-b) + b * ws2(a-b)`
+`x = a * isPositive(a-b) + b * isNegative(a-b)`
 
 ```js
 function createMathMaxNode(context, a, b) {
-  var expr = {};
+  var c = createMathSubtractNode(context, a, b);
+  var a0 = createIsPositiveNode(context, c);
+  var a1 = createMathMultiplyNode(context, a, a0);
+  var b0 = createIsNegativeNode(context, c);
+  var b1 = createMathMultiplyNode(context, b, b0);
 
-  expr["a-b"] = createMathSubtractNode(context, a, b);
-
-  expr["ws1(a-b)"] = createWaveShaperNode(context, ws1, expr["a-b"]);
-  expr["a*ws1(a-b)"] = createMathMultiplyNode(context, a, expr["ws1(a-b)"]);
-
-  expr["ws2(a-b)"] = createWaveShaperNode(context, ws2, expr["a-b"]);
-  expr["b*ws2(a-b)"] = createMathMultiplyNode(context, b, expr["ws2(a-b)"]);
-
-  expr["a*ws1(a-b)+b*ws2(a-b)"] = createMathAddNode(context, expr["a*ws1(a-b)"], expr["b*ws2(a-b)"]);
-
-  return expr["a*ws1(a-b)+b*ws2(a-b)"];
+  return createMathAddNode(context, a1, b1);
 }
 ```
 
 ### AudioGraph
 
 ![](math-max-node.png)
-
-### WaveShape
-
-![](math-max-wave-shape.png)
 
 ### Plot
 
