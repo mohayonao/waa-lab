@@ -6,6 +6,8 @@
 
 ### Code
 
+`x = a * b`
+
 ```js
 function createMathMultiplyNode(context, a, b) {
   var x = context.createGain();
@@ -21,11 +23,11 @@ function createMathMultiplyNode(context, a, b) {
 
 ### AudioGraph
 
-![](math-multiply-node.png)
+![](MathMultiplyNode.png)
 
 ### Plot
 
-![](math-multiply-node-plot.png)
+![](MathMultiplyNodePlot.png)
 
 ### Demo
 
