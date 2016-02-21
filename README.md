@@ -16,6 +16,7 @@ This repository is a collection of experimental code for Web Audio API.
   - [MathInvertNode](node/MathInvertNode)
   - [MathMaxNode](node/MathMaxNode)
   - [MathMultiplyNode](node/MathMultiplyNode)
+  - [MathNotEqualToNode](node/MathNotEqualToNode)
   - [MathSignNode](node/MathSignNode)
   - [MathSubtractNode](node/MathSubtractNode)
   - [ZeroCrossingNode](node/ZeroCrossingNode)
