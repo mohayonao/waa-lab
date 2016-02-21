@@ -2,11 +2,11 @@
 
 ### Expression
 
-- `x = (a < b) ? +1 : 0`
+`x = (a < b) ? 1 : 0`
 
 ### Code
 
-`x = (b - a) > 0`
+`x = ((b - a) > 0) ? 1 : 0`
 
 ```js
 function createCompareLessThanNode(context, a, b) {
@@ -18,11 +18,11 @@ function createCompareLessThanNode(context, a, b) {
 
 ### AudioGraph
 
-![](compare-less-than-node.png)
+![](CompareLessThanNode.png)
 
 ### Plot
 
-![](compare-less-than-node-plot.png)
+![](CompareLessThanNodePlot.png)
 
 ### Demo
 
