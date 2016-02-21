@@ -46,7 +46,7 @@ window.utils = (function() {
       context.lineTo(x2, y);
       context.stroke();
 
-      context.fillText(value.toFixed(1), x1 - 5 - m, y + 4)
+      context.fillText(text, x1 - 5 - m, y + 4)
     });
 
     context.restore();
@@ -89,11 +89,19 @@ window.utils = (function() {
 
     fn(context).connect(context.destination);
 
-    context.oncomplete = function(e) {
-      callback(e.renderedBuffer.getChannelData(0));
-    };
-
     context.startRendering();
+
+    return new Promise(function(resolve) {
+      context.oncomplete = function(e) {
+        var result = e.renderedBuffer.getChannelData(0);
+
+        if (typeof callback === "function") {
+          callback(result);
+        }
+
+        resolve(result);
+      };
+    });
   }
 
   utils.SignalPlotter = SignalPlotter;
