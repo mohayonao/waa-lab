@@ -5,6 +5,7 @@ This repository is a collection of experimental code for Web Audio API.
 ## Works
 
   - [IsNegativeNode](IsNegativeNode)
+  - [IsNotZeroNode](IsNotZeroNode)
   - [IsPositiveNode](IsPositiveNode)
   - [IsZeroNode](IsZeroNode)
   - [MathAbsNode](MathAbsNode)
