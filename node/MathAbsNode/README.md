@@ -2,7 +2,7 @@
 
 ### Expression
 
-- `x = (a < 0) ? -a : +a`
+`x = (a < 0) ? -a : a`
 
 ### Code
 
@@ -18,11 +18,11 @@ function createMathAbsNode(context, a) {
 
 ### AudioGraph
 
-![](math-abs-node.png)
+![](MathAbsNode.png)
 
 ### Plot
 
-![](math-abs-node-plot.png)
+![](MathAbsNodePlot.png)
 
 ### Demo
 
