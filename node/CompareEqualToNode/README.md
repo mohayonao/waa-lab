@@ -2,11 +2,11 @@
 
 ### Expression
 
-- `x = (a == b) ? +1 : 0`
+`x = (a == b) ? 1 : 0`
 
 ### Code
 
-`x = (a - b) == 0`
+`x = ((a - b) == 0) ? 1 : 0`
 
 ```js
 function createCompareEqualToNode(context, a, b) {
@@ -18,11 +18,11 @@ function createCompareEqualToNode(context, a, b) {
 
 ### AudioGraph
 
-![](compare-equal-to-node.png)
+![](CompareEqualToNode.png)
 
 ### Plot
 
-![](compare-equal-to-node-plot.png)
+![](CompareEqualToNodePlot.png)
 
 ### Demo
 
