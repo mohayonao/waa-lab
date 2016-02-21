@@ -2,7 +2,7 @@
 
 ### Expression
 
-- `x = (a > 0) ? +1 : 0`
+`x = (a > 0) ? 1 : 0`
 
 ### Code
 
@@ -16,17 +16,17 @@ function createIsPositiveNode(context, a) {
 
 ### AudioGraph
 
-![](is-positive-node.png)
+![](IsPositiveNode.png)
 
 ### WaveShape
 
-`ws = (x) -> (x > 0) ? +1 : 0`
+`ws = (x) -> (x > 0) ? 1 : 0`
 
-![](is-positive-wave-shape.png)
+![](IsPositiveNodeWaveShape.png)
 
 ### Plot
 
-![](is-positive-node-plot.png)
+![](IsPositiveNodePlot.png)
 
 ### Demo
 
