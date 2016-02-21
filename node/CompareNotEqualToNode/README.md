@@ -2,11 +2,11 @@
 
 ### Expression
 
-- `x = (a != b) ? +1 : 0`
+`x = (a != b) ? 1 : 0`
 
 ### Code
 
-`x = (a - b) != 0`
+`x = ((a - b) != 0) ? 1 : 0`
 
 ```js
 function createCompareNotEqualToNode(context, a, b) {
@@ -18,11 +18,11 @@ function createCompareNotEqualToNode(context, a, b) {
 
 ### AudioGraph
 
-![](compare-not-equal-to-node.png)
+![](CompareNotEqualToNode.png)
 
 ### Plot
 
-![](compare-not-equal-to-node-plot.png)
+![](CompareNotEqualToNodePlot.png)
 
 ### Demo
 
