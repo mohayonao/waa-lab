@@ -2,7 +2,7 @@
 
 ### Expression
 
-- `x = (a == 0) ? 0 : (a < 0) ? -1 : +1`
+`x = (a == 0) ? 0 : (a < 0) ? -1 : 1`
 
 ### Code
 
@@ -16,17 +16,17 @@ function createMathSignNode(context, a) {
 
 ### AudioGraph
 
-![](math-sign-node.png)
+![](MathSignNode.png)
 
 ### WaveShape
 
-`ws = (x) -> (x == 0) ? 0 : (x < 0) ? -1 : +1`
+`ws = (x) -> (x == 0) ? 0 : (x < 0) ? -1 : 1`
 
-![](math-sign-wave-shape.png)
+![](MathSignNodeWaveShape.png)
 
 ### Plot
 
-![](math-sign-node-plot.png)
+![](MathSignNodePlot.png)
 
 ### Demo
 
