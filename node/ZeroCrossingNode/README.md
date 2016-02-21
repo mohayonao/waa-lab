@@ -2,11 +2,11 @@
 
 ### Expression
 
-- `x = (sign(a[t]) - sign(a[t-1])) != 0 ? 1 : 0`
+`x = ((sign(a[t]) - sign(a[t-1])) != 0) ? 1 : 0`
 
 ### Code
 
-`x = (sign(a) - sign(delay1(a))) != 0`
+`x = ((sign(a) - sign(delay1(a))) != 0) ? 1 : 0`
 
 ```js
 function createZeroCrossingNode(context, a) {
@@ -21,11 +21,11 @@ function createZeroCrossingNode(context, a) {
 
 ### AudioGraph
 
-![](zero-crossing-node.png)
+![](ZeroCrossingNode.png)
 
 ### Plot
 
-![](zero-crossing-node-plot.png)
+![](ZeroCrossingNodePlot.png)
 
 ### Demo
 
