@@ -1,4 +1,4 @@
-# MathNotEqualToNode
+# CompareNotEqualToNode
 
 ### Expression
 
@@ -9,7 +9,7 @@
 `x = (a - b) != 0`
 
 ```js
-function createMathNotEqualToNode(context, a, b) {
+function createCompareNotEqualToNode(context, a, b) {
   var c = createMathSubtractNode(context, a, b);
 
   return createIsNotZeroNode(context, c);
@@ -18,12 +18,12 @@ function createMathNotEqualToNode(context, a, b) {
 
 ### AudioGraph
 
-![](math-not-equal-to-node.png)
+![](compare-not-equal-to-node.png)
 
 ### Plot
 
-![](math-not-equal-to-node-plot.png)
+![](compare-not-equal-to-node-plot.png)
 
 ### Demo
 
-http://mohayonao.github.io/waa-lab/node/MathNotEqualToNode/
+http://mohayonao.github.io/waa-lab/node/CompareNotEqualToNode/

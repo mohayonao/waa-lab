@@ -2,20 +2,20 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>MathNotEqualToNode</title>
+  <title>CompareEqualToNode</title>
   <style>
   canvas { width:100%;height:480px;background:#ecf0f1 }
   </style>
 </head>
 <body>
-  <h1>MathNotEqualToNode</h1>
+  <h1>CompareEqualToNode</h1>
   <canvas id="canvas"></canvas>
   <script src="../../_/utils.js"></script>
-  <script src="../IsNotZeroNode/createIsNotZeroNode.js"></script>
+  <script src="../IsZeroNode/createIsZeroNode.js"></script>
   <script src="../MathAddNode/createMathAddNode.js"></script>
   <script src="../MathInvertNode/createMathInvertNode.js"></script>
   <script src="../MathSubtractNode/createMathSubtractNode.js"></script>
-  <script src="createMathNotEqualToNode.js"></script>
+  <script src="createCompareEqualToNode.js"></script>
   <script>
   window.OfflineAudioContext = window.OfflineAudioContext || window.webkitOfflineAudioContext;
   window.addEventListener("DOMContentLoaded", function() {
@@ -56,7 +56,7 @@
       var a = createNodeA(context);
       var b = createNodeB(context);
 
-      return createMathNotEqualToNode(context, a, b);
+      return createCompareEqualToNode(context, a, b);
     }
 
     function main() {
