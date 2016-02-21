@@ -2,7 +2,7 @@
 
 ### Expression
 
-- `x = (a == 0) ? +1 : 0`
+`x = (a == 0) ? 1 : 0`
 
 ### Code
 
@@ -18,21 +18,19 @@ function createIsZeroNode(context, a) {
 
 ### AudioGraph
 
-![](is-zero-node.png)
+![](IsZeroNode.png)
 
 ### WaveShape
 
-`ws = (x) -> (x == 0) ? +1 : 0`
+`ws = (x) -> (x == 0) ? 1 : 0`
 
-![](is-zero-wave-shape.png)
+_ws2 is used to provide stability the output._
+
+![](IsZeroNodeWaveShape.png)
 
 ### Plot
 
-![](is-zero-node-plot.png)
-
-### Note
-
-- The length of waveshape table affects accuracy of detecting zero.
+![](IsZeroNodePlot.png)
 
 ### Demo
 
