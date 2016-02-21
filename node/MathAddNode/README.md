@@ -6,6 +6,8 @@
 
 ### Code
 
+`x = a + b`
+
 ```js
 function createMathAddNode(context, a, b) {
   var x = context.createGain();
@@ -19,11 +21,11 @@ function createMathAddNode(context, a, b) {
 
 ### AudioGraph
 
-![](math-add-node.png)
+![](MathAddNode.png)
 
 ### Plot
 
-![](math-add-node-plot.png)
+![](MathAddNodePlot.png)
 
 ### Demo
 
