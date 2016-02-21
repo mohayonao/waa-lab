@@ -8,11 +8,7 @@
 
 ```js
 function createMathSubtractNode(context, a, b) {
-  var c = context.createGain();
-
-  b.connect(c);
-
-  c.gain.value = -1;
+  var c = createMathInvertNode(context, b);
 
   return createMathAddNode(context, a, c);
 }
