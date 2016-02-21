@@ -2,7 +2,7 @@
 
 ### Expression
 
-- `x = (a > b) ? a : b`
+`x = (a > b) ? a : b`
 
 ### Code
 
@@ -22,11 +22,11 @@ function createMathMaxNode(context, a, b) {
 
 ### AudioGraph
 
-![](math-max-node.png)
+![](MathMaxNode.png)
 
 ### Plot
 
-![](math-max-node-plot.png)
+![](MathMaxNodePlot.png)
 
 ### Demo
 
