@@ -10,6 +10,7 @@ This repository is a collection of experimental code for Web Audio API.
   - [CompareGreaterThanNode](node/CompareGreaterThanNode)
   - [CompareGreaterThanOrEqualToNode](node/CompareGreaterThanOrEqualToNode)
   - [CompareLessThanNode](node/CompareLessThanNode)
+  - [CompareLessThanOrEqualToNode](node/CompareLessThanOrEqualToNode)
   - [CompareNotEqualToNode](node/CompareNotEqualToNode)
   - [IsNegativeNode](node/IsNegativeNode)
   - [IsNotZeroNode](node/IsNotZeroNode)
