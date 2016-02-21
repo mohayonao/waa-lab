@@ -6,6 +6,8 @@
 
 ### Code
 
+`x = a + -b`
+
 ```js
 function createMathSubtractNode(context, a, b) {
   var c = createMathInvertNode(context, b);
@@ -16,11 +18,11 @@ function createMathSubtractNode(context, a, b) {
 
 ### AudioGraph
 
-![](math-subtract-node.png)
+![](MathSubtractNode.png)
 
 ### Plot
 
-![](math-subtract-node-plot.png)
+![](MathSubtractNodePlot.png)
 
 ### Demo
 
