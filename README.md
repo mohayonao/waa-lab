@@ -4,6 +4,12 @@ This repository is a collection of experimental code for Web Audio API.
 
 ## Works
 
+### links
+
+  - [Music Programming Languages](links/music-programming-languages.md)
+  - [Specification](links/specification.md)
+  - [Tutorials](links/tutorials.md)
+
 ### node
 
   - [CompareEqualToNode](node/CompareEqualToNode)
@@ -26,6 +32,7 @@ This repository is a collection of experimental code for Web Audio API.
   - [MathMultiplyNode](node/MathMultiplyNode)
   - [MathSignNode](node/MathSignNode)
   - [MathSubtractNode](node/MathSubtractNode)
+  - [PulseNode](node/PulseNode)
   - [SwitchNode](node/SwitchNode)
   - [ZeroCrossingNode](node/ZeroCrossingNode)
 
