@@ -25,8 +25,8 @@ function createCrossFadeNode(context, a, b, c) {
 
 ### WaveShape
 
-- `ws1 = (x) -> x + 1 * 0.5`
-- `ws2 = (x) -> 1 - (x + 1 * 0.5)`
+- `ws1 = (x) -> (x + 1) * 0.5`
+- `ws2 = (x) -> 1 - ((x + 1) * 0.5)`
 
 ![](CrossFadeNodeWaveShape.png)
 
