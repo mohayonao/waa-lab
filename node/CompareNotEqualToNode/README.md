@@ -4,26 +4,11 @@
 
 `x = (a != b) ? 1 : 0`
 
-### Code
-
-`x = ((a - b) != 0) ? 1 : 0`
-
-```js
-function createCompareNotEqualToNode(context, a, b) {
-  var c = createMathSubtractNode(context, a, b);
-
-  return createIsNotZeroNode(context, c);
-}
-```
-
 ### AudioGraph
 
-![](CompareNotEqualToNode.png)
+![](img/CompareNotEqualToNode.png)
 
 ### Plot
 
-![](CompareNotEqualToNodePlot.png)
-
-### Demo
-
+![](img/CompareNotEqualToNodePlot.png)  
 http://mohayonao.github.io/waa-lab/node/CompareNotEqualToNode/

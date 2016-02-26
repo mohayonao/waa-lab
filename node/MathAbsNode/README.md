@@ -4,26 +4,11 @@
 
 `x = (a < 0) ? -a : a`
 
-### Code
-
-`x = a * sign(a)`
-
-```js
-function createMathAbsNode(context, a) {
-  var b = createMathSignNode(context, a);
-
-  return createMathMultiplyNode(context, a, b);
-}
-```
-
 ### AudioGraph
 
-![](MathAbsNode.png)
+![](img/MathAbsNode.png)
 
 ### Plot
 
-![](MathAbsNodePlot.png)
-
-### Demo
-
+![](img/MathAbsNodePlot.png)  
 http://mohayonao.github.io/waa-lab/node/MathAbsNode/

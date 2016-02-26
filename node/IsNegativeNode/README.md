@@ -4,30 +4,17 @@
 
 `x = (a < 0) ? 1 : 0`
 
-### Code
-
-`x = ws(a)`
-
-```js
-function createIsNegativeNode(context, a) {
-  return createWaveShaperNode(context, ws, a);
-}
-```
-
 ### AudioGraph
 
-![](IsNegativeNode.png)
+![](img/IsNegativeNode.png)
 
 ### WaveShape
 
 `ws = (x) -> (x < 0) ? 1 : 0`
 
-![](IsNegativeNodeWaveShape.png)
+![](img/IsNegativeNodeWaveShape.png)
 
 ### Plot
 
-![](IsNegativeNodePlot.png)
-
-### Demo
-
+![](img/IsNegativeNodePlot.png)  
 http://mohayonao.github.io/waa-lab/node/IsNegativeNode/

@@ -3,18 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>MathDivideNode</title>
-  <style>
-  canvas { width:100%;height:480px;background:#ecf0f1 }
-  </style>
+  <link rel="stylesheet" type="text/css" href="../../_/style.css"/>
 </head>
 <body>
-  <h1>MathDivideNode</h1>
-  <canvas id="canvas"></canvas>
+  <a href="https://github.com/mohayonao/waa-lab/tree/gh-pages/node/MathDivideNode"><h1>MathDivideNode</h1></a>
+  <canvas id="canvas" class="plot"></canvas>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.4/es6-shim.min.js"></script>
   <script src="../../_/utils.js"></script>
   <script src="../MathMultiplyNode/createMathMultiplyNode.js"></script>
   <script src="createMathDivideNode.js"></script>
   <script>
-  window.OfflineAudioContext = window.OfflineAudioContext || window.webkitOfflineAudioContext;
   window.addEventListener("DOMContentLoaded", function() {
     "use strict";
 
@@ -97,26 +95,36 @@
         yticks: [ 0, 1, 2, 3, 4, 5, 10, 15, 20 ],
       });
 
-      var signalA, signalB;
-
       Promise.all([
-        utils.captureSignal(createNodeA, 0.1, function(signal) {
-          plotter.plot((signalA = signal), { strokeStyle: "#e74c3c", lineWidth: 1 });
-        }),
-        utils.captureSignal(createNodeB, 0.1, function(signal) {
-          plotter.plot((signalB = signal), { strokeStyle: "#3498db", lineWidth: 1 });
-        }),
-        utils.captureSignal(createNodeX, 0.1, function(signal) {
-          plotter.plot(signal, { strokeStyle: "#f1c40f", lineWidth: 4 });
-        })
-      ]).then(function() {
-        var signal = new Float32Array(signalA.length);
+        utils.captureSignal(createNodeA, 0.1).then(function(signal) {
+          plotter.plot(signal, { strokeStyle: "#e74c3c", lineWidth: 1 });
 
-        for (var i = 0; i < signal.length; i++) {
-          signal[i] = signalA[i] / signalB[i];
+          return signal;
+        }),
+        utils.captureSignal(createNodeB, 0.1).then(function(signal) {
+          plotter.plot(signal, { strokeStyle: "#3498db", lineWidth: 1 });
+
+          return signal;
+        }),
+        utils.captureSignal(createNodeX, 0.1).then(function(signal) {
+          plotter.plot(signal, { strokeStyle: "#f1c40f", lineWidth: 4 });
+        }),
+      ]).then(function(result) {
+        var signalA = result[0];
+        var signalB = result[1];
+        var signalC = new Float32Array(signalA.length);
+
+        for (var i = 0; i < signalC.length; i++) {
+          signalC[i] = signalA[i] / signalB[i];
         }
 
-        plotter.plot(signal, { strokeStyle: "#1abc9c", lineWidth: 0.5 });
+        plotter.plot(signalC, { strokeStyle: "#1abc9c", lineWidth: 0.5 });
+      }).then(function() {
+        var img = document.createElement("img");
+
+        img.src = canvas.toDataURL();
+
+        canvas.parentNode.replaceChild(img, canvas);
       });
     }
 

@@ -3,17 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>MathAddNode</title>
-  <style>
-  canvas { width:100%;height:480px;background:#ecf0f1 }
-  </style>
+  <link rel="stylesheet" type="text/css" href="../../_/style.css"/>
 </head>
 <body>
-  <h1>MathAddNode</h1>
-  <canvas id="canvas"></canvas>
+  <a href="https://github.com/mohayonao/waa-lab/tree/gh-pages/node/MathAddNode"><h1>MathAddNode</h1></a>
+  <canvas id="canvas" class="plot"></canvas>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.4/es6-shim.min.js"></script>
   <script src="../../_/utils.js"></script>
   <script src="createMathAddNode.js"></script>
   <script>
-  window.OfflineAudioContext = window.OfflineAudioContext || window.webkitOfflineAudioContext;
   window.addEventListener("DOMContentLoaded", function() {
     "use strict";
 
@@ -65,16 +63,22 @@
       var context = canvas.getContext("2d");
       var plotter = new utils.SignalPlotter(context);
 
-      utils.captureSignal(createNodeA, 0.1, function(signal) {
-        plotter.plot(signal, { strokeStyle: "#e74c3c", lineWidth: 1 });
-      });
+      Promise.all([
+        utils.captureSignal(createNodeA, 0.1).then(function(signal) {
+          plotter.plot(signal, { strokeStyle: "#e74c3c", lineWidth: 1 });
+        }),
+        utils.captureSignal(createNodeB, 0.1).then(function(signal) {
+          plotter.plot(signal, { strokeStyle: "#3498db", lineWidth: 1 });
+        }),
+        utils.captureSignal(createNodeX, 0.1).then(function(signal) {
+          plotter.plot(signal, { strokeStyle: "#f1c40f", lineWidth: 4 });
+        }),
+      ]).then(function() {
+        var img = document.createElement("img");
 
-      utils.captureSignal(createNodeB, 0.1, function(signal) {
-        plotter.plot(signal, { strokeStyle: "#3498db", lineWidth: 1 });
-      });
+        img.src = canvas.toDataURL();
 
-      utils.captureSignal(createNodeX, 0.1, function(signal) {
-        plotter.plot(signal, { strokeStyle: "#f1c40f", lineWidth: 4 });
+        canvas.parentNode.replaceChild(img, canvas);
       });
     }
 

@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -11,14 +12,16 @@ ws2[x < 0] = 1
 
 plt.subplot(211)
 plt.title("ws1")
+plt.grid()
 plt.xlim(-1, 1)
 plt.ylim(-1.2, +1.2)
 plt.plot(x, ws1)
 
 plt.subplot(212)
 plt.title("ws2")
+plt.grid()
 plt.xlim(-1, 1)
 plt.ylim(-1.2, +1.2)
 plt.plot(x, ws2)
 
-plt.show()
+plt.savefig("%s/img/SwitchNodeWaveShape.png" % os.path.dirname(__file__))

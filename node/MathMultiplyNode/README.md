@@ -4,31 +4,11 @@
 
 `x = a * b`
 
-### Code
-
-`x = a * b`
-
-```js
-function createMathMultiplyNode(context, a, b) {
-  var x = context.createGain();
-
-  a.connect(x);
-  b.connect(x.gain);
-
-  x.gain.value = 0;
-
-  return x;
-}
-```
-
 ### AudioGraph
 
-![](MathMultiplyNode.png)
+![](img/MathMultiplyNode.png)
 
 ### Plot
 
-![](MathMultiplyNodePlot.png)
-
-### Demo
-
+![](img/MathMultiplyNodePlot.png)  
 http://mohayonao.github.io/waa-lab/node/MathMultiplyNode/

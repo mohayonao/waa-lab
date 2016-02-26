@@ -1,6 +1,9 @@
 window.utils = (function() {
   "use strict";
 
+  window.AudioContext = window.AudioContext || window.webkitAudioContext;
+  window.OfflineAudioContext = window.OfflineAudioContext || window.webkitOfflineAudioContext;
+
   var utils = {};
 
   function SignalPlotter(context, opts) {
@@ -82,7 +85,7 @@ window.utils = (function() {
     return (value - inMin) / (inMax - inMin) * (outMax - outMin) + outMin;
   }
 
-  function captureSignal(fn, duration, callback) {
+  function captureSignal(fn, duration) {
     var sampleRate = 44100;
     var length = Math.floor(duration * sampleRate);
     var context = new OfflineAudioContext(1, length, sampleRate);
@@ -93,13 +96,7 @@ window.utils = (function() {
 
     return new Promise(function(resolve) {
       context.oncomplete = function(e) {
-        var result = e.renderedBuffer.getChannelData(0);
-
-        if (typeof callback === "function") {
-          callback(result);
-        }
-
-        resolve(result);
+        resolve(e.renderedBuffer.getChannelData(0));
       };
     });
   }
