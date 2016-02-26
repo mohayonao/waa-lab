@@ -32,9 +32,12 @@ This repository is a collection of experimental code for Web Audio API.
   - [MathMultiplyNode](node/MathMultiplyNode)
   - [MathSignNode](node/MathSignNode)
   - [MathSubtractNode](node/MathSubtractNode)
-  - [PulseNode](node/PulseNode)
   - [SwitchNode](node/SwitchNode)
   - [ZeroCrossingNode](node/ZeroCrossingNode)
+
+### research
+
+  - [WaveShaperNode Interpolation](research/wave-shaper-interpolation)
 
 ## License
 MIT
