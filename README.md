@@ -37,6 +37,7 @@ This repository is a collection of experimental code for Web Audio API.
 
 ### research
 
+  - [AudioParam#setValueCurveAtTime Interpolation](research/value-curve-interpolation)
   - [WaveShaperNode Interpolation](research/wave-shaper-interpolation)
 
 ## License

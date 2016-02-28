@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ValueCurve Interpolation</title>
+  <link rel="stylesheet" type="text/css" href="../../_/style.css"/>
+</head>
+<body>
+  <a href="https://github.com/mohayonao/waa-lab/tree/gh-pages/node/value-curve-interpolation"><h1>ValueCurve Interpolation</h1></a>
+  <canvas id="canvas" class="plot"></canvas>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.4/es6-shim.min.js"></script>
+  <script src="../../_/utils.js"></script>
+  <script>
+  window.addEventListener("DOMContentLoaded", function() {
+    "use strict";
+
+    var curve = new Float32Array([ -1, -0.5, 0, 0.5, 1 ]);
+
+    function createNodeA(context) {
+      var bufSrc = context.createBufferSource();
+      var buffer = context.createBuffer(1, 8, context.sampleRate);
+      var gain = context.createGain();
+      var t0 = context.currentTime;
+      var t1 = t0 + 0.1;
+
+      buffer.getChannelData(0).set([ 1, 1, 1, 1, 1, 1, 1, 1 ]);
+
+      bufSrc.buffer = buffer;
+      bufSrc.loop = true;
+      bufSrc.start(t0);
+      bufSrc.stop(t1);
+      bufSrc.connect(gain);
+
+      gain.gain.setValueCurveAtTime(curve, t0, t1 - t0);
+
+      return gain;
+    }
+
+    function main() {
+      var canvas = document.getElementById("canvas");
+
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+
+      var context = canvas.getContext("2d");
+      var plotter = new utils.SignalPlotter(context);
+
+      context.strokeStyle = "#666";
+      context.fillStyle = "#666";
+
+      context.beginPath();
+      context.moveTo((canvas.width - 40) * 0.5 + 40.5, 0);
+      context.lineTo((canvas.width - 40) * 0.5 + 40.5, canvas.height);
+      context.stroke();
+
+      utils.captureSignal(createNodeA, 0.1).then(function(signal) {
+        plotter.plot(signal, { strokeStyle: "#f1c40f", lineWidth: 4 });
+      }).then(function() {
+        var img = document.createElement("img");
+
+        img.src = canvas.toDataURL();
+
+        canvas.parentNode.replaceChild(img, canvas);
+      });
+    }
+
+    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+      document.getElementById("canvas").addEventListener("click", main);
+    } else {
+      main();
+    }
+  });
+  </script>
+</body>
+</html>
