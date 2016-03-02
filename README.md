@@ -11,6 +11,7 @@ This repository is a collection of experimental code for Web Audio API.
 ### links
 
   - [Music Programming Languages](links/music-programming-languages.md)
+  - [Source Code of Web Audio API](links/source-code-of-web-audio-api.md)
   - [Specification](links/specification.md)
   - [Tutorials](links/tutorials.md)
 
