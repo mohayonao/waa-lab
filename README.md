@@ -4,6 +4,10 @@ This repository is a collection of experimental code for Web Audio API.
 
 ## Works
 
+### demo
+
+  - [Time Stretch Demo](demo/time-stretch)
+
 ### links
 
   - [Music Programming Languages](links/music-programming-languages.md)
