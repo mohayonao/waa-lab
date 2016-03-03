@@ -1,4 +1,4 @@
-# WaveShaperNode Interpolation
+# WaveShaperNode - Interpolation
 
 ### Comparison
 
@@ -63,4 +63,4 @@ function noInterp(x, curve) {
 ```
 
 ### Try It
-http://mohayonao.github.io/waa-lab/research/wave-shaper-interpolation/
+http://mohayonao.github.io/waa-lab/research/wave-shaper-node-interpolation/

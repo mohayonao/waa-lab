@@ -1,4 +1,4 @@
-# AudioParam#setValueCurveAtTime Interpolation
+# AudioParam - setValueCurveAtTime Interpolation
 
 ### Comparison
 
@@ -55,4 +55,4 @@ function safari(x, curve) {
 ```
 
 ### Try It
-http://mohayonao.github.io/waa-lab/research/value-curve-interpolation/
+http://mohayonao.github.io/waa-lab/research/audio-param-set-value-curve-at-time-interpolation/

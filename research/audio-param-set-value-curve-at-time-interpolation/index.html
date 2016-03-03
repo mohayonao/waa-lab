@@ -2,11 +2,11 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>WaveShaper Interpolation</title>
+  <title>AudioParam - setValueCurveAtTime Interpolation</title>
   <link rel="stylesheet" type="text/css" href="../../_/style.css"/>
 </head>
 <body>
-  <a href="https://github.com/mohayonao/waa-lab/tree/gh-pages/node/wave-shaper-interpolation"><h1>WaveShaper Interpolation</h1></a>
+  <a href="https://github.com/mohayonao/waa-lab/tree/gh-pages/research/audio-param-set-value-curve-at-time-interpolation"><h1>AudioParam - setValueCurveAtTime Interpolation</h1></a>
   <canvas id="canvas" class="plot"></canvas>
   <script src="//cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.4/es6-shim.min.js"></script>
   <script src="../../_/utils.js"></script>
@@ -31,21 +31,9 @@
       bufSrc.stop(t1);
       bufSrc.connect(gain);
 
-      gain.gain.setValueAtTime(-1, t0);
-      gain.gain.linearRampToValueAtTime(1, t1);
+      gain.gain.setValueCurveAtTime(curve, t0, t1 - t0);
 
       return gain;
-    }
-
-    function createNodeB(context) {
-      var nodeA = createNodeA(context);
-      var ws = context.createWaveShaper();
-
-      nodeA.connect(ws);
-
-      ws.curve = curve;
-
-      return ws;
     }
 
     function main() {
@@ -65,7 +53,7 @@
       context.lineTo((canvas.width - 40) * 0.5 + 40.5, canvas.height);
       context.stroke();
 
-      utils.captureSignal(createNodeB, 0.1).then(function(signal) {
+      utils.captureSignal(createNodeA, 0.1).then(function(signal) {
         plotter.plot(signal, { strokeStyle: "#f1c40f", lineWidth: 4 });
       }).then(function() {
         var img = document.createElement("img");
