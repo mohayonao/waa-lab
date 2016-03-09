@@ -45,6 +45,7 @@ This repository is a collection of experimental code for Web Audio API.
 
   - [AudioNode - Default Channel Configuration](research/audio-node-default-channel-configuration.md)
   - [AudioParam - setValueCurveAtTime Interpolation](research/audio-param-set-value-curve-at-time-interpolation)
+  - [AudioUtils - The Valid Range of Parameters](research/audio-utils-the-valid-range-of-parameters.md)
   - [WaveShaperNode - Interpolation](research/wave-shaper-node-interpolation)
 
 ## License
