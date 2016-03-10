@@ -7,7 +7,7 @@
 | DelayNode                       | 1 | 1 | - | max         | speakers |
 | AudioBufferSourceNode           | 0 | 1 | - | -           | -        |
 | MediaElementAudioSourceNode     | 0 | 1 | - | -           | -        |
-| AudioWorkerNode                 |var|var|_N_| explicit    | speakers |
+| AudioWorkerNode                 |var|var|var| explicit    | speakers |
 | ScriptProcessorNode             | 1 | 1 |_N_| explicit    | speakers |
 | PannerNode                      | 1 | 1 | 2 | clamped-max | speakers |
 | SpatialPannerNode               | 1 | 1 | 2 | clamped-max | speakers |
