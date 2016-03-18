@@ -4,9 +4,18 @@ Web Audio Weekly is a valuable source of the latest topics about the Web Audio A
 
 http://blog.chrislowis.co.uk/waw.html
 
-:trophy: _60 posts and 386 topics are... awesome!!_
+:trophy: _61 posts and 393 topics are... awesome!!_
 
 ---
+
+##### [Web Audio Weekly 61](http://blog.chrislowis.co.uk//waw/2016/03/18/web-audio-weekly-61.html) : 2016-03-18
+- Chrome Music Lab
+- Eye Conductor Brings MIDI To People With Disabilities
+- Plan8 Throwerwall
+- Glitch: a noisy fusion of math and music
+- Clara Rockmore’s 105th Birthday
+- jsSID
+- WebGL and Web Audio = Fireworks
 
 ##### [Web Audio Weekly 60](http://blog.chrislowis.co.uk//waw/2016/03/04/web-audio-weekly-60.html) : 2016-03-04
 - Web Audio Arpeggiator
