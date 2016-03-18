@@ -41,7 +41,7 @@ def merge_issues(a, b)
   a = Hash[a.map {|issue| [ issue[:url], issue ] }]
   b = Hash[b.map {|issue| [ issue[:url], issue ] }]
 
-  b.merge(a).values.sort_by {|issue| issue[:date] }.reverse
+  b.merge(a).values.sort_by {|issue| issue[:url] }.reverse
 end
 
 def fetch_topics(url)
