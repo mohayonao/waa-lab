@@ -4,9 +4,21 @@ Web Audio Weekly is a valuable source of the latest topics about the Web Audio A
 
 http://blog.chrislowis.co.uk/waw.html
 
-:trophy: _61 posts and 393 topics are... awesome!!_
+:trophy: _62 posts and 403 topics are... awesome!!_
 
 ---
+
+##### [Web Audio Weekly 62](http://blog.chrislowis.co.uk//waw/2016/04/03/web-audio-weekly-62.html) : 2016-04-03
+- Tools for Thought: Graphical Algebra and Fourier Analysis
+- WAC 2016
+- Procedural game music in BlockShip Wars
+- MidiWriterJS
+- W3C online course on HTML5/Web Audio
+- Tascam Portastudio Simulation
+- 19 TET Keyboard
+- Tinyrave
+- Play Drums Online
+- Humpbacks synchronize their music across oceans, and there’s sheet music to prove it
 
 ##### [Web Audio Weekly 61](http://blog.chrislowis.co.uk//waw/2016/03/18/web-audio-weekly-61.html) : 2016-03-18
 - Chrome Music Lab
