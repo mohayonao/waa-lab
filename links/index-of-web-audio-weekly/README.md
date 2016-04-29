@@ -4,9 +4,27 @@ Web Audio Weekly is a valuable source of the latest topics about the Web Audio A
 
 http://blog.chrislowis.co.uk/waw.html
 
-:trophy: _62 posts and 403 topics are... awesome!!_
+:trophy: _64 posts and 417 topics are... awesome!!_
 
 ---
+
+##### [Web Audio Weekly 64](http://blog.chrislowis.co.uk//waw/2016/04/29/web-audio-weekly-64.html) : 2016-04-29
+- Jory Prum: 1975-2016
+- Novation use Web MIDI to bring Circuit to the web
+- mod-synth.io
+- Cracked
+- Mira
+- Envelope Generator
+- midi-ports: easy access to MIDI hardware
+- MIDI Logger - debugger console for MIDI
+- A curated list about Audio Visualisation
+- WKT Audio: Web Audio API file loader
+- Gregorian Voices: Early Roman Catholic Church Song Generator
+
+##### [Web Audio Weekly 63](http://blog.chrislowis.co.uk//waw/2016/04/14/web-audio-weekly-63.html) : 2016-04-14
+- TweetFM
+- Soledad Penadés Peer to Peer screencast
+- Web Audio Conference 2016
 
 ##### [Web Audio Weekly 62](http://blog.chrislowis.co.uk//waw/2016/04/03/web-audio-weekly-62.html) : 2016-04-03
 - Tools for Thought: Graphical Algebra and Fourier Analysis
