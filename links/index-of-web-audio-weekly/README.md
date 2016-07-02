@@ -4,9 +4,32 @@ Web Audio Weekly is a valuable source of the latest topics about the Web Audio A
 
 http://blog.chrislowis.co.uk/waw.html
 
-:trophy: _64 posts and 417 topics are... awesome!!_
+:trophy: _66 posts and 436 topics are... awesome!!_
 
 ---
+
+##### [Web Audio Weekly 66](http://blog.chrislowis.co.uk//waw/2016/06/10/web-audio-weekly-66.html) : 2016-06-10
+- midi.city
+- Beat Detection Using JavaScript and the Web Audio API
+- Recreating Theremin With JS And Web Audio API
+- Loop Drop now free to download
+- Talks
+- The Great Outdoors
+- Efflux
+- Control Web Audio applications with Leap Motion
+- soundcompare
+- Web Audio API may allow additional cross-site tracking
+- ChiptuneBlaster
+- What If There Was A Dubstep Song But Instead Of The Drop There Was Just The Seinfeld Theme Song
+
+##### [Web Audio Weekly 65](http://blog.chrislowis.co.uk//waw/2016/05/29/web-audio-weekly-64.html) : 2016-05-29
+- Audiograph
+- genish.js
+- Tiny 808
+- Theremin
+- Chrome Music Lab: Making Kandinski
+- Scribble Audio
+- Pixel Synth
 
 ##### [Web Audio Weekly 64](http://blog.chrislowis.co.uk//waw/2016/04/29/web-audio-weekly-64.html) : 2016-04-29
 - Jory Prum: 1975-2016
