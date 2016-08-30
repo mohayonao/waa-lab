@@ -4,9 +4,30 @@ Web Audio Weekly is a valuable source of the latest topics about the Web Audio A
 
 http://blog.chrislowis.co.uk/waw.html
 
-:trophy: _66 posts and 436 topics are... awesome!!_
+:trophy: _68 posts and 453 topics are... awesome!!_
 
 ---
+
+##### [Web Audio Weekly 68](http://blog.chrislowis.co.uk//waw/2016/08/29/web-audio-weekly-68.html) : 2016-08-29
+- BlockDust
+- Google’s Omnitone: Spatial audio on the web
+- What’s new in Web Audio
+- Guitar Amp Simulator in Web Audio
+- midi-ports
+- genish.js tutorial
+- What does the harmonic series sound like?
+- Thoughts on improving Web Audio
+- Talking Machines interview Doug Eck about Generative Art
+
+##### [Web Audio Weekly 67](http://blog.chrislowis.co.uk//waw/2016/07/17/web-audio-weekly-67.html) : 2016-07-17
+- Djenerator: A metal breakdown generator
+- DX7 Emulator
+- 108
+- Space Bumps
+- Third International Conference on Technologies for Music Notation and Representation
+- StepSequencer
+- VisualizerMicro
+- Electronic Ladyland
 
 ##### [Web Audio Weekly 66](http://blog.chrislowis.co.uk//waw/2016/06/10/web-audio-weekly-66.html) : 2016-06-10
 - midi.city
